@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Login Page</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+    {{>navbar}}
+	<div class="login-box">
+		<h2>Login Here</h2>
+		<form action="/login" method="POST">
+			<div class="user-box">
+				<input type="text" name="email">
+				<label>Email</label>
+			</div>
+			<div class="user-box">
+				<input type="password" name="password" >
+				<label>Password</label>
+			</div>
+			<button type="submit" class="btn">Login</button>
+		</form>
+	</div>
+</body>
+</html>
